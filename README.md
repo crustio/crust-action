@@ -46,7 +46,7 @@ with:
 
 ## Contribution
 
-Feel free to dive in! [Open an issue](https://github.com/crustio/ipfs-crust-action/issues/new) or send a PR.
+Feel free to dive in! [Open an issue](https://github.com/crustio/crust-action/issues/new) or send a PR.
 
 To contribute to Crust in general, see the [Contribution Guide](https://github.com/crustio/crust/blob/master/docs/CONTRIBUTION.md)
 
