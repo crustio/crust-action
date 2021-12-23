@@ -52,4 +52,4 @@ To contribute to Crust in general, see the [Contribution Guide](https://github.c
 
 ## License
 
-[MIT](https://github.com/crustio/ipfs-crust-action/blob/main/LICENSE) @Crust Network
+[MIT](https://github.com/crustio/crust-action/blob/main/LICENSE) @Crust Network
