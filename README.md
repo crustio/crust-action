@@ -39,8 +39,9 @@ Decentralized pin your site to Crust IPFS Network with Github Action
 ```yaml
 uses: crustio/crust-action@v1.0.0
 with:
-  cid: QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
+  path: ./build
   seeds: ${{ secrets.CRUST_SEEDS }}
+  cid-version: 1
 ```
 
 ## Contribution
