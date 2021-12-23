@@ -1,0 +1,33 @@
+name: 'Crust Action'
+description: 'Decentralized pin your site to Crust IPFS Network'
+author: 'crust'
+branding:
+  icon: 'file-plus'
+  color: 'orange'
+
+inputs:
+  path:
+    description: 'Path to uploading directory'
+    required: true
+  seeds:
+    description: 'Crust secret seeds(12/24 words)'
+    required: true
+  cid-version:
+    description: 'IPFS CID version(v0/v1)'
+    required: false
+    default: 0
+  crust-endpoint:
+    description: 'Crust Chain websocket endpoint'
+    required: false
+    default: 'wss://rpc.crust.network'
+  ipfs-gateway:
+    description: 'IPFS W3Authed gateway endpoint'
+    required: false
+    default: 'https://crustwebsites.net'
+outputs:
+  cid:
+    description: 'IPFS CID'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
