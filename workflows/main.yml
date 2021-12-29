@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: Testing on Crust pinner
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - name: Crust IPFS uploader action
+        id: pin
+        uses: crustio/crust-action@v1.0.0
+        with:
+          path: './.github/workflows/build'
+          seeds: ${{ secrets.CRUST_SEEDS }}
+          cid-version: 1
+      - name: Pin success
+        run: echo "Now, you can access with 'https://crustwebsites.net/ipfs/${{ steps.pin.outputs.hash }}'"
